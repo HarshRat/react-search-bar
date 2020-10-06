@@ -1,10 +1,36 @@
-import React from 'react'
+import React from 'react';
 
-import { ExampleComponent } from 'react-search-bar'
-import 'react-search-bar/dist/index.css'
+import { SearchBar } from 'react-search-bar';
+
+const Data = [
+  {
+    key: 'john',
+    value: 'John Doe'
+  },
+  {
+    key: 'jane',
+    value: 'Jane Doe'
+  },
+  {
+    key: 'mary',
+    value: 'Mary Phillips'
+  },
+  {
+    key: 'robert',
+    value: 'Robert'
+  },
+  {
+    key: 'karius',
+    value: 'Karius'
+  }
+];
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div>
+      <SearchBar Data = { Data } placeholder="LET'S GOOO"/>
+    </div>
+  )
 }
 
 export default App
