@@ -57,7 +57,7 @@ export const SearchBar = ({ placeholder, Data }) => {
         <ResultsContainer>
           {Data.map((data, index) => (
             // eslint-disable-next-line react/jsx-key
-            <Result id={data.key} onMouseOver={handleSelect}>
+            <Result id={data.key} onMouseOver={handleSelect} key={index.toString()}>
               {data.value}
             </Result>
           ))}
