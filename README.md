@@ -25,6 +25,18 @@ class Example extends Component {
 }
 ```
 
+#### Functional Component Example
+
+```jsx
+import React from 'react'
+
+import SearchBar from 'react-search-bar'
+import 'react-search-bar/dist/index.css'
+
+const Example = () => {
+  return <SearchBar />
+}
+
 ## License
 
 MIT © [HarshRat](https://github.com/HarshRat)
