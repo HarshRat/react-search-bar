@@ -25,6 +25,13 @@ class Example extends Component {
 }
 ```
 
+## Props
+
+| Prop   | Required |
+| ------------- | ------------- |
+| placeholder  | true  |
+| Data  | true  |
+
 ## License
 
 MIT © [HarshRat](https://github.com/HarshRat)
