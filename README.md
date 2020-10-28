@@ -7,6 +7,10 @@
 ## Install
 
 ```bash
+yarn add react-search-bar
+```
+
+```bash
 npm install --save react-search-bar
 ```
 
