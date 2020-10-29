@@ -9,6 +9,11 @@
 ```bash
 npm install --save react-search-bar
 ```
+or
+```bash
+yarn add react-search-bar
+```
+
 
 ## Usage
 
