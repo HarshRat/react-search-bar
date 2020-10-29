@@ -24,8 +24,31 @@ import { SearchBar } from 'react-search-bar'
 import 'react-search-bar/dist/index.css'
 
 class Example extends Component {
+  const Data = [
+  {
+    key: 'john',
+    value: 'John Doe'
+  },
+  {
+    key: 'jane',
+    value: 'Jane Doe'
+  },
+  {
+    key: 'mary',
+    value: 'Mary Phillips'
+  },
+  {
+    key: 'robert',
+    value: 'Robert'
+  },
+  {
+    key: 'karius',
+    value: 'Karius'
+  }
+];
+
   render() {
-    return <SearchBar data={} />
+    return <SearchBar Data={Data} />
   }
 }
 ```
