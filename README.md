@@ -9,18 +9,23 @@
 ```bash
 npm install --save react-search-bar
 ```
+or
+```bash
+yarn add react-search-bar
+```
+
 
 ## Usage
 
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-search-bar'
+import { SearchBar } from 'react-search-bar'
 import 'react-search-bar/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <SearchBar data={} />
   }
 }
 ```
