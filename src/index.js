@@ -2,7 +2,8 @@ import React, { useState, useCallback, useEffect } from 'react'
 import { Search } from 'react-feather';
 import tw from 'twin.macro'
 
-const InputContainer = tw.div`m-0 max-w-screen-sm w-full sm:w-80 p-2 flex content-start`
+const Container = tw.div`max-w-screen-sm w-full sm:w-80 p-2`
+const InputContainer = tw.div`m-0 mx-auto flex content-start`
 const Input = tw.input`flex px-6 w-full max-w-screen-sm py-4 rounded-md font-medium bg-white border border-gray-400 z-20 placeholder-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5 first:mt-0`
 
 const ResultsContainer = tw.div`border border-solid border-gray-400 p-1 bg-gray-200 w-full sm:w-88 absolute`
@@ -48,6 +49,8 @@ export const SearchBar = ({ placeholder, Data }) => {
   }, [])
 
   return (
+    <Container>
+       <h3 tw="text-xl font-semibold">Search Bar</h3>
     <InputContainer>
       <Input
         type='text'
@@ -72,5 +75,6 @@ export const SearchBar = ({ placeholder, Data }) => {
         </ResultsContainer>
       )}
     </InputContainer>
+    </Container>
   )
 }
